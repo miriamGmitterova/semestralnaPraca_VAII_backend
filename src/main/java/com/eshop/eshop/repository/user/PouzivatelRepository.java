@@ -1,16 +1,16 @@
-package com.eshop.eshop.repository;
+package com.eshop.eshop.repository.user;
 
-import com.eshop.eshop.entity.Pouzivatel;
+import com.eshop.eshop.entity.user.Pouzivatel;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
+import java.util.UUID;
 
 @Repository
-public interface PouzivatelRepository extends JpaRepository<Pouzivatel, String> {
+public interface PouzivatelRepository extends JpaRepository<Pouzivatel, UUID> {
     boolean existsPouzivatelByPouzivatelskeMeno(String pouzivatelskeMeno);
     Pouzivatel findPouzivatelByPouzivatelskeMeno(String pouzivatelskeMeno);
     @Modifying
@@ -23,3 +23,4 @@ public interface PouzivatelRepository extends JpaRepository<Pouzivatel, String> 
 
     int deletePouzivatelByPouzivatelskeMeno(String pouzivatelskeMeno);
 }
+

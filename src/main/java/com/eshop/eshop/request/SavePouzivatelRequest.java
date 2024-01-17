@@ -26,4 +26,5 @@ public class SavePouzivatelRequest {
     private String krstneMeno;
 
     private String priezvisko;
+
 }

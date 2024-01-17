@@ -1,7 +1,6 @@
 package com.eshop.eshop.controller;
 
-import com.eshop.eshop.entity.Nohavice;
-import com.eshop.eshop.entity.Pouzivatel;
+import com.eshop.eshop.entity.user.Pouzivatel;
 import com.eshop.eshop.request.SavePouzivatelRequest;
 import com.eshop.eshop.service.PouzivatelService;
 import lombok.RequiredArgsConstructor;

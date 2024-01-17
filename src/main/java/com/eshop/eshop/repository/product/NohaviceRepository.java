@@ -1,13 +1,11 @@
-package com.eshop.eshop.repository;
+package com.eshop.eshop.repository.product;
 
-import com.eshop.eshop.entity.Nohavice;
+import com.eshop.eshop.entity.product.Nohavice;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
 
 import java.util.UUID;
 
-@Repository
 public interface NohaviceRepository extends JpaRepository<Nohavice, UUID> {
 
-
 }
+

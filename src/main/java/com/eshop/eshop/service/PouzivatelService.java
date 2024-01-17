@@ -1,7 +1,7 @@
 package com.eshop.eshop.service;
 
-import com.eshop.eshop.entity.Pouzivatel;
-import com.eshop.eshop.repository.PouzivatelRepository;
+import com.eshop.eshop.entity.user.Pouzivatel;
+import com.eshop.eshop.repository.user.PouzivatelRepository;
 import com.eshop.eshop.request.SavePouzivatelRequest;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -53,7 +53,7 @@ public class PouzivatelService {
                     pouzivatelRepository.updateToUserByPouzivatelskeMeno(pouzivatelskeMeno);
                 }
             } else {
-                throw new RuntimeException("Pouzivatel uz je táto rola!");
+                throw new RuntimeException("Pouzivatel uz je tato rola!");
             }
         } else {
             throw new RuntimeException("Pouzivatel neexistuje!");
